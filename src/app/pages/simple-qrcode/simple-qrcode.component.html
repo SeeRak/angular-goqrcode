@@ -1,0 +1,16 @@
+
+<div class="container">
+    <div class="group">
+      <input #url id="name" type="text" required="required"/>
+      <label for="name">URL</label>
+      <div class="bar"></div>
+    </div>
+    <div class="btn-container">
+        <button (click)="getSimpleQrCode(url.value)" class="btn">Générer le QR Code</button>
+    </div>
+    <div class="qrcode-container">
+        <img src="{{urlQrCode}}" alt="">
+
+    </div>
+</div>
+
